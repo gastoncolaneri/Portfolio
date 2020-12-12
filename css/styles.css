@@ -1,0 +1,22 @@
+html {
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+}
+
+.main_photo {
+    width: 100%;
+}
+
+.hr {
+    border-color: #514f4f !important;
+  }
+
+.links:link {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.links:visited {
+    text-decoration: none;
+    color: aliceblue;
+
+}
