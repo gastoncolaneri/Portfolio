@@ -20,3 +20,12 @@ html {
     color: aliceblue;
 
 }
+.fondo{
+    padding:;
+    background: url("../img/perfil.jpg") center;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
