@@ -1,4 +1,22 @@
-*{
+html,
+body,
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    color: aliceblue;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    color: aliceblue;
+    margin-bottom: 25px !important; 
+}
+p,a {
+    color: aliceblue;
+    font-size: small;
     font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
 
@@ -13,10 +31,24 @@
 .links:link {
     text-decoration: none;
     color: aliceblue;
+    
 
 }
 .links:visited {
     text-decoration: none;
     color: aliceblue;
+    
+}
 
+.bar_radius {
+    border-radius: 500px !important;
+}
+
+.icons_color{
+    color: aqua;
+    margin-right: 10px;
+}
+
+.bar_position{
+    margin-bottom: 1rem;
 }
