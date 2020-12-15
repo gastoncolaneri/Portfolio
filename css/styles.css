@@ -42,6 +42,15 @@ p,a {
 
 .bar_radius {
     border-radius: 500px !important;
+
+}
+
+.bar_position{
+    margin-bottom: 1rem;
+}
+
+.bar_colour{
+    background-color: aqua !important;
 }
 
 .icons_color{
@@ -49,6 +58,3 @@ p,a {
     margin-right: 10px;
 }
 
-.bar_position{
-    margin-bottom: 1rem;
-}
