@@ -9,23 +9,51 @@
     <link rel="stylesheet" href="font/roboto.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/switches.css">
+    <link rel="stylesheet" href="css/spinner.css">
+
 
     <title>Christian Gastón Colaneri</title>
 
 </head>
 
-<body style="background-color: #181818;">
-    <div class="row m-auto">
 
-        <div class="container mt-3">
-            <div class="col-sm-12 col-md-4 d-inline-block float-left mb-2"
-                style="background-color: #313131; padding: 0!important;">
-                <div style="position: relative;">
+<body class="body_colour_light">
+
+    <div id="spinner" class="loader" style="visibility:hidden ;">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>   
+
+    <div class="row m-auto">
+        <div class="container mt-3">     
+            <div class="col-sm-12 col-md-4 d-inline-block float-left mb-2 blocks_format_light"
+                style="padding: 0!important;" id="first_block">                
+                <div style="position: relative;">  
+                    <div class="mt-2 ml-2" style="position: absolute; top: 0; left: 0;">                  
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked onclick="change_colour()">
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>  
+                    </div> 
+                    <div class="mt-2 mr-2" style="position: absolute; top: 0; right: 0;">                  
+                    <div class="onoffswitch2">
+                        <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2" tabindex="0" checked>
+                        <label class="onoffswitch-label2" for="myonoffswitch2">
+                            <span class="onoffswitch-inner2"></span>
+                            <span class="onoffswitch-switch2"></span>
+                        </label>
+                    </div>
+                    </div>
                     <img src="img/perfil.jpg" alt="Christian Gaston Colaneri" class="main_photo">
                     <div class="pt-3 pb-3"
                         style="background: rgba(0, 0, 0, 0.5); width: 100%; ; padding: 0.01em 16px;position: absolute;left: 0;bottom: 0;"
                         class="text-center">
-                        <h4 class="text-center">Christian Gastón Colaneri</h4>
+                        <h4 class="text-center name_image">Christian Gastón Colaneri</h4>
                     </div>
                 </div>
 
@@ -52,93 +80,98 @@
                             target="_blank"><i class="fab fa-linkedin-in icons_color icons_size"></i>cgastoncolaneri</a>
                     </p>
                     <span class="display-none">
-                        <hr class="hr" />
-                        <p class="w3-large">
+                        <hr class="hr_light" />
+                        <h5>
                             <b><i class="fa fa-cogs icons_color"></i>Skills</b>
-                        </p>
+                        </h5>
                         <p>Python</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 70%;"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                 70%
                             </div>
                         </div>
                         <p>Django</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 <div class="w3-center w3-text-white">50%</div>
                             </div>
                         </div>
                         <p>Selenium</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 50%
                             </div>
                         </div>
                         <p>SQL</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 60%"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                 60%
                             </div>
                         </div>
                         <p>HTML</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 75%"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                 75%
                             </div>
                         </div>
                         <p>CSS</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 65%"
+                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                                 65%
                             </div>
                         </div>
                         <p>Bootstrap</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 50%
                             </div>
                         </div>
                         <p>JavaScript</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 50%
                             </div>
                         </div>
                         <p>Git - Github</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                 50%
                             </div>
                         </div>
                         <p>VBA</p>
                         <div class="progress bar_radius bar_position">
-                            <div class="progress-bar progress-bar-striped bar_radius bar_colour" role="progressbar"
-                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 40%"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                                 40%
                             </div>
                         </div>
                         <br />
-                        <hr class="hr" />
+                        <hr class="hr_light" />
                         <!-- Que Nico me explique como carajo funciona esto-->
-                        <p class="w3-large w3-text-theme">
-                            <b><i class="fas fa-language"></i><span class="lang" key="Idioma"></span></b>
-                        </p>
-                        <p><span class="lang" key="Español"></span></p>
-                        <div class="back-blanco-falso w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height: 24px; width: 100%"></div>
+                        <h5>
+                            <b><i class="fas fa-language icons_color"></i><span class="lang" key="Idioma">
+                                    Language</span></b>
+                        </h5>
+                        <p><span class="lang" key="Español"></span> Spanish</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 100%"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
                         </div>
-                        <p><span class="lang" key="Ingles"></span></p>
-                        <div class="back-blanco-falso w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height: 24px; width: 20%"></div>
+                        <p><span class="lang" key="Ingles"></span>English</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 80%"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
                         </div>
                     </span>
                     <br />
@@ -146,8 +179,9 @@
 
             </div>
 
-            <div class="col-sm-12 col-md-8 d-inline-block mb-2 " style="color: aliceblue;padding-right: 0!important;">
-                <div class="p-4 blocks_format">
+            <div class="col-sm-12 col-md-8 d-inline-block mb-2 margin"
+                style="color: aliceblue;padding-right: 0!important;">
+                <div class="p-4 blocks_format_light" id="second_block">
                     <h3>
                         <i class="fas fa-suitcase icons_color"></i>
                         Work Experience
@@ -168,7 +202,7 @@
                         Elaboration of reports on a monthly, quarterly and annual basis.<br>
                         Contact with external agents both inside and outside the country.
                     </p>
-                    <hr class="hr" />
+                    <hr class="hr_light" />
                     <p class="subtitle_format">
                         <b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank"
                             class="links">TeleCentro </a>
@@ -182,7 +216,7 @@
                         Sale of products of the company Papelera Tucumán. <br>
                         Preparation of reports and proposal of ideas to generate an increase in sales. <br>
                     </p>
-                    <hr class="hr" />
+                    <hr class="hr_light" />
                     <p class="subtitle_format">
                         <b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"
                             class="links">TeleCentro </a>
@@ -194,12 +228,12 @@
                         Contact of potential residential customers by email or telephone, to offer them the service
                         provided by the company.
                     </p>
-                    <hr class="hr" />
+
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2"
+            <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2 margin"
                 style="color: aliceblue;padding-right: 0!important;">
-                <div class="p-4 blocks_format">
+                <div class="p-4 blocks_format_light" id="third_block">
                     <h3>
                         <i class="fas fa-user-graduate icons_color"></i>
                         Education
@@ -212,9 +246,10 @@
                     </p>
                     <p class="texts_block">
                         <i class="fa fa-graduation-cap icons_color icons_size"></i><a
-                            href="https://www.accenture.com/us-en" target="_blank" class="links texts_block">Codo a codo 4.0
+                            href="https://www.accenture.com/us-en" target="_blank" class="links texts_block">Codo a codo
+                            4.0
                     </p>
-                    <hr class="hr" />                    
+                    <hr class="hr_light" />
 
                     <p class="subtitle_format">
                         Python for Data Analysis
@@ -228,7 +263,7 @@
                     </p>
                     <p>
                     </p>
-                    <hr class="hr" />
+                    <hr class="hr_light" />
 
                     <p class="subtitle_format">
                         Introduction to Databases and SQL
@@ -242,7 +277,7 @@
                     </p>
                     <p>
                     </p>
-                    <hr class="hr" />
+                    <hr class="hr_light" />
 
                     <p class="subtitle_format">
                         Python for Non-Developers
@@ -256,7 +291,7 @@
                     </p>
                     <p>
                     </p>
-                    <hr class="hr" />
+                    <hr class="hr_light" />
 
                     <p class="subtitle_format">
                         Bachelor's degree in International Trade</a>
@@ -272,13 +307,11 @@
                     <p class="texts_block">
                         <i class="fas fa-award icons_color icons_size"></i>7.55
                     </p>
-                    <hr class="hr" />
-
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2"
-                style="color: aliceblue;padding-right: 0!important;">
-                <div class="p-4 blocks_format">
+            <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2 margin "
+                style="color: aliceblue;padding-right: 0!important; float: right;">
+                <div class="p-4 blocks_format_light" id="fourth_block">
                     <h3>
                         <i class="fas fa-laptop-code icons_color"></i>
                         Projects
@@ -295,7 +328,7 @@
                         HTML - CSS - Bootstrap <br>
                         JavaScript <br>
                         Python - Django <br>
-                        SQL - PostgreSQL <br>
+                        SQL - PostgreSQL - SQLite <br>
                     </p>
                     <a href="https://github.com/GastiC/WebMascotas" target="_blank">
                         <span class="button_projects">
@@ -310,7 +343,7 @@
                             Website
                         </span>
                     </a>
-                    <hr class="hr" />
+                    <hr class="hr_light"/>
                 </div>
             </div>
         </div>

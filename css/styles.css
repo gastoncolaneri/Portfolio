@@ -6,20 +6,34 @@ h4,
 h5,
 h6 {
     font-family: "Roboto", sans-serif, Arial, Helvetica;
-    color: aliceblue;
+    color: #514f4f ;
+}
+
+.name_image {
+    color: #d6d4d4;
+}
+
+.text_colour {
+    color:#d6d4d4
 }
 
 h3 {
     font-family: "Roboto", sans-serif, Arial, Helvetica;
-    color: aliceblue;
+    color: #514f4f ;
     margin-bottom: 25px !important; 
 }
 p,a {
-    color: aliceblue;
+    color: #514f4f;
     font-size: small;
     font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
+.body_colour {
+    background-color: #181818 ;
+}
+.body_colour_light {
+    background-color: #f1f1f1 ;
 
+}
 .main_photo {
     width: 100%;
 }
@@ -27,22 +41,28 @@ p,a {
 .hr {
     border-color: #514f4f !important;
   }
+.hr_light {
+    border-color: #b9b6b6 !important;
+  }
 
 .blocks_format{
     background-color: #313131;
-    width: 100%
+}
+
+.blocks_format_light{
+    background-color: #ffffff;
 }
 
 .links:link {
     text-decoration: none;
-    color: aliceblue;
+    color:#514f4f;
     margin-left: 0px !important;
     
 
 }
 .links:visited {
     text-decoration: none;
-    color: aliceblue;    
+    color: #514f4f;    
 }
 
 .bar_radius {
@@ -56,6 +76,7 @@ p,a {
 
 .bar_colour{
     background-color: #08A6A1 !important;
+    font-weight: 700;
 }
 
 .subtitle_format {
@@ -86,9 +107,16 @@ p,a {
 .button_projects {
     background-color: #08A6A1;
     border-radius: 50px; 
-    padding: 8px ; 
+    padding: 3px 8px 3px 8px;
     color: aliceblue; 
     margin-right: 15px;
     font-size: small;
 }
+
+
+@media (max-width: 767px) {
+    .margin {
+      padding: 0 !important;
+    }
+  }
 
