@@ -74,19 +74,19 @@
     box-sizing: border-box;
 }
 .onoffswitch-inner2:before {
-    content: "Español";
+    content: "English";
     padding-left: 10px;
     background-color: #08A6A1; color: #FFFFFF;
 }
 .onoffswitch-inner2:after {
-    content: "English";
+    content: "Español";
     padding-right: 10px;
     background-color: #08A6A1; color: #FFFFFF;
     text-align: right;
 }
 .onoffswitch-switch2 {
     display: block; width: 20px; margin: 6px;
-    background-image: url("../img/usa.jpg"); 
+    background-image: url("../img/argc.jpg"); 
     position: absolute; top: 0; bottom: 0;
     right: 56px;
     border-radius: 20px;
@@ -97,5 +97,6 @@
 }
 .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
     right: 0px; 
-    background-image: url("../img/argc.jpg"); 
+    background-image: url("../img/usa.jpg"); 
+
 }
