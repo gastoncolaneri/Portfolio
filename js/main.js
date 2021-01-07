@@ -127,7 +127,9 @@ function change_spanish(){
     "Licenciatura en Comercio Internacional</a>",
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2014 - Julio 2019',
     '<i class="fas fa-laptop-code icons_color"></i>Proyectos',
-    '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 6 meses <i class="fas fa-info-circle icons_size ml-4"></i>Buscador de mascotas perdidas - Proyecto Personal']    
+    '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 6 meses <i class="fas fa-info-circle icons_size ml-4"></i>Buscador de mascotas perdidas - Proyecto Personal',
+    '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 3 semanas <i class="fas fa-info-circle icons_size ml-4"></i>Sitio web para emprendimiento personal - Proyecto Personal',
+]    
 
     for (i=0; i<changes.length; i++){ 
         console.log(changes);
@@ -148,12 +150,12 @@ function change_english(){
     document.getElementById("second_language").innerHTML = 'English '*/
 
     changes = document.getElementsByClassName("language_change")
-    texts = ['<i class="fas fa-briefcase icons_color"></i> Aspirante a Desarrollador Web Full Stack',
-    '<b><i class="fa fa-cogs icons_color"></i>Habilidades</b>',
-    '<b><i class="fas fa-language icons_color"></i><span key="Idioma">Idiomas</span></b>',
-    'Español',
-    'Inglés',
-    '<i class="fas fa-suitcase icons_color"></i>Experiencia laboral',
+    texts_english = ['<i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer',
+    '<b><i class="fa fa-cogs icons_color"></i>Skills</b>',
+    '<b><i class="fas fa-language icons_color"></i><span key="Idioma">Languages</span></b>',
+    'Spanish',
+    'English',
+    '<i class="fas fa-suitcase icons_color"></i>Work Experience',
     '<b>Business Operations Associate</b> - <a href="https://www.accenture.com/us-en" target="_blank"class="links">Accenture Service Center SRL </a>',
     '<i class="far fa-calendar-alt cons_color icons_size"></i>November 2019 - <span class="button_projects">Present </span>',
     'Development and implementation of automation using Python and its libraries.<br> Execution of corporate operations within the area of international taxes. <br> Elaboration of reports on a monthly, quarterly and annual basis.<br> Contact with external agents both inside and outside the country.',
@@ -174,13 +176,15 @@ function change_english(){
     "Bachelor's degree in International Trade</a>",
     '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2014 - July 2019',
     '<i class="fas fa-laptop-code icons_color"></i>Projects',
-    '<i class="far fa-clock icons_color icons_size"></i>About 6 months <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project']
+    '<i class="far fa-clock icons_color icons_size"></i>About 6 months <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project',
+    '<i class="far fa-clock icons_color icons_size"></i>About 3 weeks <i class="fas fa-info-circle icons_size ml-4"></i>Website for own entrepreneurship - Own project',
+]
 
     for (i=0; i<changes.length; i++){ 
         console.log(changes);
-        changes[i].innerHTML = texts[i];
+        changes[i].innerHTML = texts_english[i];
         console.log("changes[i]");
-        console.log(texts[i]);
+        console.log(texts_english[i]);
     }
 
 };
