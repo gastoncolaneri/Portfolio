@@ -16,6 +16,9 @@ h6 {
 .text_colour {
     color:#d6d4d4
 }
+.bz{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 h3 {
     font-family: "Roboto", sans-serif, Arial, Helvetica;
@@ -53,16 +56,16 @@ p,a {
     background-color: #ffffff;
 }
 
-.links:link {
+.links {
     text-decoration: none;
     color:#514f4f;
     margin-left: 0px !important;
     
-
 }
-.links:visited {
+.links:hover{
     text-decoration: none;
-    color: #514f4f;    
+    color:#d6d4d4;
+    margin-left: 0px !important;
 }
 
 .bar_radius {
