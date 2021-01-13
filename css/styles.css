@@ -50,10 +50,13 @@ p,a {
 
 .blocks_format{
     background-color: #313131;
+    padding: 0!important;
 }
 
 .blocks_format_light{
     background-color: #ffffff;
+    padding: 0!important;
+
 }
 
 .links {
@@ -63,6 +66,18 @@ p,a {
     
 }
 .links:hover{
+    text-decoration: none;
+    color:#d6d4d4;
+    margin-left: 0px !important;
+}
+
+.links_dark {
+    text-decoration: none;
+    color:#d6d4d4;
+    margin-left: 0px !important;
+    
+}
+.links_dark:hover{
     text-decoration: none;
     color:#d6d4d4;
     margin-left: 0px !important;
