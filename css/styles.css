@@ -6,7 +6,7 @@ h4,
 h5,
 h6 {
     font-family: "Roboto", sans-serif, Arial, Helvetica;
-    color: #514f4f ;
+    color: #757575;
 }
 
 .name_image {
@@ -22,12 +22,25 @@ h6 {
 
 h3 {
     font-family: "Roboto", sans-serif, Arial, Helvetica;
-    color: #514f4f ;
-    margin-bottom: 25px !important; 
+    color: #757575;
+    font-size: 24px !important;
+    margin-bottom: 15px !important; 
 }
 p,a {
-    color: #514f4f;
-    font-size: small;
+    color: #757575;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+}
+
+.p{
+    color: #757575;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    margin-bottom: 20px;
+}
+.a{
+    color: #757575;
+    font: 13px;
     font-family: "Roboto", sans-serif, Arial, Helvetica;
 }
 .body_colour {
@@ -42,7 +55,7 @@ p,a {
 }
 
 .hr {
-    border-color: #514f4f !important;
+    border-color: #757575!important;
   }
 .hr_light {
     border-color: #b9b6b6 !important;
@@ -61,7 +74,7 @@ p,a {
 
 .links {
     text-decoration: none;
-    color:#514f4f;
+    color:#757575;
     margin-left: 0px !important;
     
 }
@@ -99,7 +112,6 @@ p,a {
 
 .subtitle_format {
     font-size: 16px;
-    font-weight: 500;
 }
 .texts_block{
     color: #08A6A1;
@@ -120,6 +132,21 @@ p,a {
 .icons_size{
     width: 15px !important;
     margin-right: 10px !important;
+}
+
+.w10{
+    width: 10%; 
+}
+
+.f-left{    
+    float: left;
+}
+.w90 {
+    width: 90%; 
+}
+
+.mb5 {
+    margin-bottom: 5px;
 }
 
 .button_projects {

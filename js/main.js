@@ -206,7 +206,7 @@ function change_english(){
     '<i class="fas fa-retweet icons_color"></i> Adaptability</p>',
     '<i class="fas fa-clipboard-check icons_color"></i> Dedication</p>',
     '<i class="fas fa-cubes icons_color"></i> Organization</p>',
-    '<i class="fas fa-language icons_color"></i><span key="Idioma">Languages</span><',
+    '<i class="fas fa-language icons_color"></i><span key="Idioma">Languages</span>',
     'Spanish',
     'English',
     '<i class="fas fa-suitcase icons_color"></i>Work Experience',
@@ -259,28 +259,30 @@ function change_colour(){
     }
 };
 
+function onload_body () {
+    setTimeout(function(){ 
+        var firstBlock = document.getElementById("first_block");
+        var rightContainer1 = document.getElementById("right_container_1");
+        var rightContainer2 = document.getElementById("right_container_2");
+        var rightContainer3 = document.getElementById("right_container_3");
+    
+        if (window.innerWidth > 767) {
 
+            total = rightContainer1.clientHeight + rightContainer2.clientHeight + rightContainer3.clientHeight + 32
+            firstBlock.style.minHeight = total + "px";
+        }
 
-function adjust_height(){
-    var firstBlock = document.getElementById("first_block");
-    var rightContainer = document.getElementById("right_container");
-    //var thirdBlock = document.getElementById("third_block");
-    //var fourthBlock = document.getElementById("fourth_block");
+      }, 1000);
+};
 
-    console.log(firstBlock.clientHeight);
-    console.log(firstBlock.clientWidth);
-
-    rightContainer.style.height = "200px";
-    //console.log(secondBlock.clientHeight);
-    //console.log(thirdBlock.clientHeight);
-    //console.log(fourthBlock.clientHeight);
-    console.log(rightContainer.clientHeight);
-    console.log(rightContainer.clientWidth);
-
-
-    //total = secondBlock.clientHeight + thirdBlock.clientHeight + fourthBlock.clientHeight
-    //console.log(total);
-
-
-
-}
+function onresize_body () {
+        var firstBlock = document.getElementById("first_block");
+        var rightContainer1 = document.getElementById("right_container_1");
+        var rightContainer2 = document.getElementById("right_container_2");
+        var rightContainer3 = document.getElementById("right_container_3");
+    
+        if (window.innerWidth > 767) {
+            total = rightContainer1.clientHeight + rightContainer2.clientHeight + rightContainer3.clientHeight + 32
+            firstBlock.style.minHeight = total + "px";
+        } else { firstBlock.style.minHeight = 0 }
+};
