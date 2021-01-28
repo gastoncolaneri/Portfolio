@@ -30,6 +30,12 @@ function change_dark(){
     for (i=0; i<html_font.length; i++){
         html_font[i].classList.add('text_colour');  
     };
+    span_format = document.getElementsByClassName('p')
+    for (i=0; i<span_format.length; i++){
+        span_format[i].classList.add('text_colour'); 
+          
+        console.log(span_format[i]);
+    };
     h3_format = document.getElementsByTagName('h3')
     for (i=0; i<h3_format.length; i++){
         h3_format[i].classList.add('text_colour');   
@@ -46,6 +52,7 @@ function change_dark(){
     for (i=0; i<7; i++){
         link_format[i].style.color="#d6d4d4";   
     };
+    onresize_body ();
 };
 
 function change_light(){
@@ -69,6 +76,11 @@ function change_light(){
     for (i=0; i<paragraph.length; i++){
         paragraph[i].classList.remove('text_colour');   
     };
+    span_format = document.getElementsByClassName('p')
+    for (i=0; i<span_format.length; i++){
+        span_format[i].classList.remove('text_colour'); 
+        console.log(span_format[i]);  
+    };
     h3_format = document.getElementsByTagName('h3')
     for (i=0; i<h3_format.length; i++){
         h3_format[i].classList.remove('text_colour');   
@@ -85,6 +97,7 @@ function change_light(){
     for (i=0; i<7; i++){
         link_format[i].style.color="#514f4f";   
     };
+    onresize_body ();
 };
 
 
@@ -99,14 +112,14 @@ function change_spanish(){
     texts = ['<i class="fas fa-briefcase icons_color"></i> Aspirante a Desarrollador Web Full Stack',
     '<i class="fa fa-cogs icons_color"></i>Habilidades técnicas',
     '<i class="fas fa-user-tie icons_color"></i>Habilidades personales',
-    '<i class="fas fa-comments icons_color"></i> Comunicación escrita y verbal</p>',
-    '<i class="fas fa-chalkboard-teacher icons_color"></i> Autodidacta</p>',
-    '<i class="fas fa-hands-helping icons_color"></i> Resolución de conflictos</p>',
-    '<i class="fas fa-people-carry icons_color"></i> Trabajo en equipo</p>',
-    '<i class="fas fa-business-time icons_color"></i> Administración del tiempo</p>',
-    '<i class="fas fa-retweet icons_color"></i> Adaptabilidad</p>',
-    '<i class="fas fa-clipboard-check icons_color"></i> Dedicación</p>',
-    '<i class="fas fa-cubes icons_color"></i> Organización</p>',
+    '<span class="p">Comunicación escrita y verbal </span>',
+    '<span class="p">Autodidacta</span>',
+    '<span class="p">Resolución de conflictos</span>',
+    '<span class="p">Trabajo en equipo</span>',
+    '<span class="p">Administración del tiempo</span>',
+    '<span class="p"> Adaptabilidad </span>',
+    '<span class="p"> Dedicación </span>',
+    '<span class="p"> Organización </span>',
     '<i class="fas fa-language icons_color"></i><span key="Idioma">Idiomas</span>',
     'Español',
     'Inglés',
@@ -134,7 +147,8 @@ function change_spanish(){
 ]    
     for (i=0; i<changes.length; i++){ 
         changes[i].innerHTML = texts[i];
-    }
+    };
+    onresize_body ();
 };
 
 
@@ -147,7 +161,8 @@ function change_spanish_link_dark(){
 
     for (i=0; i<changes_link.length; i++){ 
         changes_link[i].innerHTML = link_spanish[i];
-    }
+    };
+    
 };
 
 function change_spanish_link_light(){
@@ -198,14 +213,14 @@ function change_english(){
     texts_english = ['<i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer',
     '<i class="fa fa-cogs icons_color"></i>Technical Skills',
     '<i class="fas fa-user-tie icons_color"></i>Personal Skills',
-    '<i class="fas fa-comments icons_color"></i> Written and verbal communication</p>',
-    '<i class="fas fa-chalkboard-teacher icons_color"></i> Self-learner</p>',
-    '<i class="fas fa-hands-helping icons_color"></i> Problem solver</p>',
-    '<i class="fas fa-people-carry icons_color"></i> Teamwork</p>',
-    '<i class="fas fa-business-time icons_color"></i> Time manager</p>',
-    '<i class="fas fa-retweet icons_color"></i> Adaptability</p>',
-    '<i class="fas fa-clipboard-check icons_color"></i> Dedication</p>',
-    '<i class="fas fa-cubes icons_color"></i> Organization</p>',
+    '<span class="p">Written and verbal communication </span>',
+    '<span class="p">Self-learner</span>',
+    '<span class="p">Problem solving</span>',
+    '<span class="p">Teamwork</span>',
+    '<span class="p">Time-management</span>',
+    '<span class="p"> Adaptability </span>',
+    '<span class="p"> Dedication </span>',
+    '<span class="p"> Organization </span>',
     '<i class="fas fa-language icons_color"></i><span key="Idioma">Languages</span>',
     'Spanish',
     'English',
@@ -233,31 +248,88 @@ function change_english(){
 ]
     for (i=0; i<changes.length; i++){ 
         changes[i].innerHTML = texts_english[i];
-    }
+    };
+    onresize_body ();
 
 };
 
 
+function change_colour_localstorage(){
 
-function change_colour(){
-    if (document.getElementById("myonoffswitch").checked === true && document.getElementById("myonoffswitch2").checked === true){  
+
+    if (localStorage.getItem('light') === 'true' && localStorage.getItem('english').checked === 'true'){  
         change_light();
         change_english();
         change_english_link_light();
-    } else if(document.getElementById("myonoffswitch").checked === true && document.getElementById("myonoffswitch2").checked === false) {
+        document.getElementById("myonoffswitch").checked === true  
+        document.getElementById("myonoffswitch2").checked === true
+
+
+    } else if(localStorage.getItem('light') === 'true' && localStorage.getItem('english') === 'false') {
         change_light();
         change_spanish();
         change_spanish_link_light();
-    } else if(document.getElementById("myonoffswitch").checked === false && document.getElementById("myonoffswitch2").checked === false) {
+        document.getElementById("myonoffswitch").checked === true  
+        document.getElementById("myonoffswitch2").checked === false
+
+
+
+    } else if(localStorage.getItem('light') === 'false' && localStorage.getItem('english') === 'false') {
         change_dark();
         change_spanish();
         change_spanish_link_dark();
-    } else if (document.getElementById("myonoffswitch").checked === false && document.getElementById("myonoffswitch2").checked === true) {
+        document.getElementById("myonoffswitch").checked === false  
+        document.getElementById("myonoffswitch2").checked === false
+
+
+    } else if (localStorage.getItem('light') === 'false' && localStorage.getItem('english') === 'true') {
         change_dark();
         change_english();
         change_english_link_dark();
-    }
+        document.getElementById("myonoffswitch").checked === false  
+        document.getElementById("myonoffswitch2").checked === true
+
+
+    };
+    console.log('dos')
+
 };
+function change_colour(){
+        if (document.getElementById("myonoffswitch").checked === true && document.getElementById("myonoffswitch2").checked === true){  
+            change_light();
+            change_english();
+            change_english_link_light();
+            localStorage.clear();
+            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
+            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+    
+        } else if(document.getElementById("myonoffswitch").checked === true && document.getElementById("myonoffswitch2").checked === false) {
+            change_light();
+            change_spanish();
+            change_spanish_link_light();
+            localStorage.clear();
+            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
+            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+    
+        } else if(document.getElementById("myonoffswitch").checked === false && document.getElementById("myonoffswitch2").checked === false) {
+            change_dark();
+            change_spanish();
+            change_spanish_link_dark();
+            localStorage.clear();
+            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
+            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+    
+        } else if (document.getElementById("myonoffswitch").checked === false && document.getElementById("myonoffswitch2").checked === true) {
+            change_dark();
+            change_english();
+            change_english_link_dark();
+            localStorage.clear();
+            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
+            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+        }
+        console.log('uno')
+    };       
+
 
 function onload_body () {
     setTimeout(function(){ 
@@ -270,9 +342,14 @@ function onload_body () {
 
             total = rightContainer1.clientHeight + rightContainer2.clientHeight + rightContainer3.clientHeight + 32
             firstBlock.style.minHeight = total + "px";
-        }
-
+        };
       }, 1000);
+
+    if (localStorage.getItem('light') !== "" & localStorage.getItem('english') !== "") {
+        change_colour_localstorage();
+        console.log('gato')
+    };   
+
 };
 
 function onresize_body () {
