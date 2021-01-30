@@ -88,12 +88,12 @@ function change_light(){
 };
 
 function spanish_cv(){
-    document.getElementsByClassName('cv')[0].href = 'C:/Users/Gastón Colaneri/Desktop/Gasti/CVs/Castellano/CV Colaneri, Christian Gaston.pdf';
+    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1Gy0Z-oq7y0TaPlKtIlrFgkGyIGmRRh2J/view?usp=sharing';
     document.getElementsByClassName('cv')[0].dowload = 'CV Colaneri, Christian Gaston.pdf';
 };
 
 function english_cv(){
-    document.getElementsByClassName('cv')[0].href = 'C:/Users/Gastón Colaneri/Desktop/Gasti/CVs/Inglés/Con foto/Resume Colaneri, Christian Gaston.pdf';
+    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/11va6ffjZe8leYl_bF-HfxLUClGCS_Yy3/view?usp=sharing';
     document.getElementsByClassName('cv')[0].dowload = 'Resume Colaneri, Christian Gaston.pdf';
 };
 
