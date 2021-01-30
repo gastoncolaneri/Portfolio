@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#009688">
-
+    <link rel="icon" href="img/icon5.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font/roboto.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -19,436 +19,424 @@
 
 
 <body class="body_colour_light" onload="onload_body()" onresize="onresize_body()">
-
-    <div id="spinner" class="loader" style="visibility:hidden ;">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
-    </div>
-
     <div class="row m-auto">
         <div class="container mt-3">
-                <div class="col-sm-12 col-md-4 d-inline-block float-left mb-2 blocks_format_light bz" id="first_block">
-                    <div style="position: relative;">
-                        <div class="mt-2 ml-2" style="position: absolute; top: 0; left: 0;">
-                            <div class="onoffswitch">
-                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox"
-                                    id="myonoffswitch" tabindex="0" checked onclick="change_colour()">
-                                <label class="onoffswitch-label" for="myonoffswitch">
-                                    <span class="onoffswitch-inner"></span>
-                                    <span class="onoffswitch-switch"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="mt-2 mr-2" style="position: absolute; top: 0; right: 0;">
-                            <div class="onoffswitch2">
-                                <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2"
-                                    id="myonoffswitch2" tabindex="0" checked onclick="change_colour()">
-                                <label class="onoffswitch-label2" for="myonoffswitch2">
-                                    <span class="onoffswitch-inner2"></span>
-                                    <span class="onoffswitch-switch2"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <img src="img/perfil.jpg" alt="Christian Gaston Colaneri" class="main_photo">
-                        <div class="pt-3 pb-3"
-                            style="background: rgba(0, 0, 0, 0.5); width: 100%; ; padding: 0.01em 16px;position: absolute;left: 0;bottom: 0;"
-                            class="text-center">
-                            <h4 class="text-center name_image">Christian Gastón Colaneri</h4>
+            <div class="col-sm-12 col-md-4 d-inline-block float-left mb-2 blocks_format_light bz" id="first_block">
+                <div style="position: relative;">
+                    <div class="mt-2 ml-2" style="position: absolute; top: 0; left: 0;">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
+                                tabindex="0" checked onclick="change_colour()">
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <p class="language_change">
-                            <i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer
-                        </p>
-                        <p>
-                            <a target="_blank" class="links"
-                                href="https://www.google.com/maps/place/Isidro+Casanova,+Provincia+de+Buenos+Aires/@-34.7200177,-58.611293,13z/data=!3m1!4b1!4m5!3m4!1s0x95bcc66953869dc9:0x46221d403a2cebfa!8m2!3d-34.7084659!4d-58.5858675">
-                                <i class="fas fa-home icons_color icons_size"> </i>Isidro Casanova, Buenos Aires,
-                                Argentina</a>
-                        </p>
-                        <p>
-                            <a class="links" href="mailto:colaneri.gaston@hotmail.com"><i
-                                    class="fas fa-envelope icons_color icons_size"></i>colaneri.gaston@hotmail.com</a>
-                        </p>
-                        <p>
-                            <a target="_blank" class="links" href="https://api.whatsapp.com/send?phone=+541155913842"><i
-                                    class="fas fa-phone-alt icons_color icons_size"></i>11 5591-3842</a>
-                        </p>
-                        <p>
-                            <a class="links" href="https://www.linkedin.com/in/christian-gaston-colaneri/?locale=en_US"
-                                target="_blank"><i
-                                    class="fab fa-linkedin-in icons_color icons_size"></i>cgastoncolaneri</a>
-                        </p>
-                        <p>
-                            <a class="links" href="https://www.linkedin.com/in/christian-gaston-colaneri/?locale=en_US"
-                                target="_blank"><i
-                                    class="fab fa-linkedin-in icons_color icons_size"></i>Descargar CV</a>
-                        </p>
-                        <span class="display-none">
-                            <hr class="hr_light" />
-                            <h3 class="language_change">
-                                <i class="fa fa-cogs icons_color"></i>Technical Skills
-                            </h3>
-                            <p>Python</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 70%;"
-                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                    70%
-                                </div>
-                            </div>
-                            <p>Django</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="w3-center w3-text-white">50%</div>
-                                </div>
-                            </div>
-                            <p>Selenium</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    50%
-                                </div>
-                            </div>
-                            <p>SQL</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 60%"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                    60%
-                                </div>
-                            </div>
-                            <p>HTML</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 75%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    75%
-                                </div>
-                            </div>
-                            <p>CSS</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 65%"
-                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                    65%
-                                </div>
-                            </div>
-                            <p>Bootstrap</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    50%
-                                </div>
-                            </div>
-                            <p>JavaScript</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    50%
-                                </div>
-                            </div>
-                            <p>Git - Github</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    50%
-                                </div>
-                            </div>
-                            <p>VBA</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 30%"
-                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                    30%
-                                </div>
-                            </div>
-                            <hr class="hr_light" />
-                            <h3 class="language_change">
-                                <i class="fas fa-user-tie icons_color"></i>Personal Skills
-                            </h3>
-
-                            <div class="f-left w10">
-                                <i class="fas fa-comments icons_color"></i>
-                            </div>
-                            <div class="w90 mb5"> <span class="p language_change">Written and verbal communication </span>                           
-                            </div>
-
-                            <div class="f-left w10">
-                                <i class="fas fa-chalkboard-teacher icons_color"></i>
-                            </div>
-                            <div class=" w90 mb5"> <span class="p language_change"><span>Self-learner</span>                                
-                            </div>
-
-                            <div class="f-left w10">
-                                <i class="fas fa-hands-helping icons_color"></i>
-                            </div>
-                            <div class=" w90 mb5"> <span class="p language_change">Problem solving</span>                                
-                            </div>
-
-                            <div class="f-left w10">
-                                <i class="fas fa-people-carry icons_color"></i>
-                            </div>
-                            <div class=" w90 mb5"> <span class="p language_change">Teamwork</span>
-                            </div>
-                            <div class="f-left w10">
-                                <i class="fas fa-business-time icons_color"></i>
-                            </div>
-                                <div class=" w90 mb5"> <span class="p language_change"> Time-management</span>                                 
-                            </div>
-                            <div class="f-left w10">
-                                <i class="fas fa-retweet icons_color"></i>
-                            </div>
-                            <div class=" w90 mb5"> <span class="p language_change"> Adaptability </span>                              
-                            </div>
-                            
-                            <div class="f-left w10">
-                                <i class="fas fa-clipboard-check icons_color"></i>
-                            </div>
-                            <div class=" w90 mb5"><span class="p language_change"> Dedication </span>
-                            </div>
-
-                            <div class="f-left w10">
-                                <i class="fas fa-cubes icons_color"></i>
-                            </div>
-                            <div class=" w90 mb5"><span class="p language_change"> Organization </span>
-                            </div>
-
-                            <hr class="hr_light" />
-
-                            <h3 class="language_change">
-                                <i class="fas fa-language icons_color"></i>Languages
-                            </h3>
-                            <p class="language_change">Spanish</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 100%"
-                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                            <p class="language_change">English</p>
-                            <div class="progress bar_radius bar_position">
-                                <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 80%"
-                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
+                    <div class="mt-2 mr-2" style="position: absolute; top: 0; right: 0;">
+                        <div class="onoffswitch2">
+                            <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2"
+                                tabindex="0" checked onclick="change_colour()">
+                            <label class="onoffswitch-label2" for="myonoffswitch2">
+                                <span class="onoffswitch-inner2"></span>
+                                <span class="onoffswitch-switch2"></span>
+                            </label>
+                        </div>
                     </div>
-
+                    <img src="img/perfil.jpg" alt="Christian Gaston Colaneri" class="main_photo">
+                    <div class="pt-3 pb-3"
+                        style="background: rgba(0, 0, 0, 0.5); width: 100%; ; padding: 0.01em 16px;position: absolute;left: 0;bottom: 0;"
+                        class="text-center">
+                        <h4 class="text-center name_image">Christian Gastón Colaneri</h4>
+                    </div>
                 </div>
-                
-                <div class="col-sm-12 col-md-8 d-inline-block mb-2 margin"
-                    style="color: aliceblue;padding-right: 0!important;" id="right_container_1">
-                    <div class="p-4 blocks_format_light bz" id="second_block">
+                <div class="p-4">
+                    <p class="language_change">
+                        <i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer
+                    </p>
+                    <p>
+                        <a target="_blank" class="links"
+                            href="https://www.google.com/maps/place/Isidro+Casanova,+Provincia+de+Buenos+Aires/@-34.7200177,-58.611293,13z/data=!3m1!4b1!4m5!3m4!1s0x95bcc66953869dc9:0x46221d403a2cebfa!8m2!3d-34.7084659!4d-58.5858675">
+                            <i class="fas fa-home icons_color icons_size"> </i>Isidro Casanova, Buenos Aires,
+                            Argentina</a>
+                    </p>
+                    <p>
+                        <a class="links" href="mailto:colaneri.gaston@hotmail.com"><i
+                                class="fas fa-envelope icons_color icons_size"></i>colaneri.gaston@hotmail.com</a>
+                    </p>
+                    <p>
+                        <a target="_blank" class="links" href="https://api.whatsapp.com/send?phone=+541155913842"><i
+                                class="fas fa-phone-alt icons_color icons_size"></i>11 5591-3842</a>
+                    </p>
+                    <p>
+                        <a class="links" href="https://www.linkedin.com/in/christian-gaston-colaneri/?locale=en_US"
+                            target="_blank"><i class="fab fa-linkedin-in icons_color icons_size"></i>cgastoncolaneri</a>
+                    </p>
+                    <p>
+                        <a href="C:/Users/Gastón Colaneri/Desktop/Gasti/CVs/Inglés/Con foto/Resume Colaneri, Christian Gaston.pdf" target="_blank" class="links language_change cv" download="Resume Colaneri, Christian Gaston.pdf">
+                            <i class="fas fa-download icons_color icons_size"></i>Download Resume</a>
+                    </p>
+                    <span class="display-none">
+                        <hr class="hr_light" />
                         <h3 class="language_change">
-                            <i class="fas fa-suitcase icons_color"></i>
-                            Work Experience
+                            <i class="fa fa-cogs icons_color"></i>Technical Skills
                         </h3>
-                        <p class="subtitle_format change_language_link">
-                            <b>Business Operations Associate</b> - <a href="https://www.accenture.com/us-en"
-                                target="_blank" class="links">Accenture Service Center SRL </a>
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>November 2019 -
-                            <span class="button_projects">
-                                Present
-                            </span>
-                        </p>
-                        <p class="language_change">
-                            Development and implementation of automation using Python and its libraries.<br>
-                            Execution of corporate operations within the area of international taxes. <br>
-                            Elaboration of reports on a monthly, quarterly and annual basis.<br>
-                            Contact with external agents both inside and outside the country.
-                        </p>
+                        <p>Python</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 70%;"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                70%
+                            </div>
+                        </div>
+                        <p>Django</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                <div class="w3-center w3-text-white">50%</div>
+                            </div>
+                        </div>
+                        <p>Selenium</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                50%
+                            </div>
+                        </div>
+                        <p>SQL</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 60%"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                60%
+                            </div>
+                        </div>
+                        <p>HTML</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 75%"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                75%
+                            </div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 65%"
+                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                65%
+                            </div>
+                        </div>
+                        <p>Bootstrap</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                50%
+                            </div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                50%
+                            </div>
+                        </div>
+                        <p>Git - Github</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                50%
+                            </div>
+                        </div>
+                        <p>VBA</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 30%"
+                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                30%
+                            </div>
+                        </div>
                         <hr class="hr_light" />
-                        <p class="subtitle_format change_language_link">
-                            <b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank"
-                                class="links">TeleCentro </a>
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>July 2017 - October 2019
-                        </p>
-                        <p class="language_change">
-                            Contact to professionals and businesses by email or by telephone, to provide them the
-                            services
-                            of the company. <br>
-                            Sale of products of the company Papelera Tucumán. <br>
-                            Preparation of reports and proposal of ideas to generate an increase in sales. <br>
-                        </p>
-                        <hr class="hr_light" />
-                        <p class="subtitle_format change_language_link">
-                            <b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"
-                                class="links">TeleCentro </a>
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>April 2015 - June 2017
-                        </p>
-                        <p class="language_change">
-                            Contact of potential residential customers by email or telephone, to offer them the service
-                            provided by the company.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2 margin"
-                    style="color: aliceblue;padding-right: 0!important;" id="right_container_2">
-                    <div class="p-4 blocks_format_light bz" id="third_block">
                         <h3 class="language_change">
-                            <i class="fas fa-user-graduate icons_color"></i>
-                            Education
+                            <i class="fas fa-user-tie icons_color"></i>Personal Skills
                         </h3>
-                        <p class="subtitle_format">
-                            Full Stack - Python</a>
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>August 2020 - December 2020
-                        </p>
-                        <p class="texts_block">
-                            <i class="fa fa-graduation-cap icons_color icons_size"></i><a
-                                href="https://www.buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank"
-                                class="links texts_block">Codo a codo
-                                4.0
-                        </p>
+
+                        <div class="f-left w10">
+                            <i class="fas fa-comments icons_color"></i>
+                        </div>
+                        <div class="w90 mb5"> <span class="p language_change">Written and verbal communication </span>
+                        </div>
+
+                        <div class="f-left w10">
+                            <i class="fas fa-chalkboard-teacher icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"> <span class="p language_change"><span>Self-learner</span>
+                        </div>
+
+                        <div class="f-left w10">
+                            <i class="fas fa-hands-helping icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"> <span class="p language_change">Problem solving</span>
+                        </div>
+
+                        <div class="f-left w10">
+                            <i class="fas fa-people-carry icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"> <span class="p language_change">Teamwork</span>
+                        </div>
+                        <div class="f-left w10">
+                            <i class="fas fa-business-time icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"> <span class="p language_change"> Time-management</span>
+                        </div>
+                        <div class="f-left w10">
+                            <i class="fas fa-retweet icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"> <span class="p language_change"> Adaptability </span>
+                        </div>
+
+                        <div class="f-left w10">
+                            <i class="fas fa-clipboard-check icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"><span class="p language_change"> Dedication </span>
+                        </div>
+
+                        <div class="f-left w10">
+                            <i class="fas fa-cubes icons_color"></i>
+                        </div>
+                        <div class=" w90 mb5"><span class="p language_change"> Organization </span>
+                        </div>
+
                         <hr class="hr_light" />
 
-                        <p class="subtitle_format language_change">
-                            Python for Data Analysis
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>March 2020 - April 2020
-                        </p>
-                        <p class="texts_block">
-                            <i class="fa fa-graduation-cap icons_color icons_size"></i>
-                            <a href="https://www.educacionit.com/" target="_blank"
-                                class="links texts_block">EducacionIT</a>
-                        </p>
-                        <p>
-                        </p>
-                        <hr class="hr_light" />
-
-                        <p class="subtitle_format language_change">
-                            Introduction to Databases and SQL
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>February 2020 - March 2020
-                        </p>
-                        <p class="texts_block">
-                            <i class="fa fa-graduation-cap icons_color icons_size"></i>
-                            <a href="https://www.educacionit.com/" target="_blank"
-                                class="links texts_block">EducacionIT</a>
-                        </p>
-                        <p>
-                        </p>
-                        <hr class="hr_light" />
-
-                        <p class="subtitle_format language_change">
-                            Python for Non-Developers
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>January 2020 - February 2020
-                        </p>
-                        <p class="texts_block">
-                            <i class="fa fa-graduation-cap icons_color icons_size"></i>
-                            <a href="https://www.educacionit.com/" target="_blank"
-                                class="links texts_block">EducacionIT</a>
-                        </p>
-                        <p>
-                        </p>
-                        <hr class="hr_light" />
-
-                        <p class="subtitle_format language_change">
-                            Bachelor's degree in International Trade
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-calendar-alt icons_color icons_size"></i>April 2014 - July 2019
-                        </p>
-                        <p class="texts_block">
-                            <i class="fa fa-graduation-cap icons_color icons_size"></i>
-                            <a href="https://www.unlam.edu.ar/" target="_blank" class="links texts_block">
-                                Universidad Nacional de la Matanza
-                            </a>
-                        </p>
-                        <p class="texts_block">
-                            <i class="fas fa-award icons_color icons_size"></i>7.55
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2 margin "
-                    style="color: aliceblue;padding-right: 0!important; float: right;" id="right_container_3">
-                    <div class="p-4 blocks_format_light bz" id="fourth_block">
                         <h3 class="language_change">
-                            <i class="fas fa-laptop-code icons_color"></i>
-                            Projects
+                            <i class="fas fa-language icons_color"></i>Languages
                         </h3>
-                        <p class="subtitle_format">
-                            Encontrá a tu mascota
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-clock icons_color icons_size"></i>In progress
-                            <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project
-
-                        </p>
-                        <p>
-                            HTML - CSS - Bootstrap <br>
-                            JavaScript <br>
-                            Python - Django <br>
-                            SQL - PostgreSQL - SQLite <br>
-                        </p>
-                        <a href="https://github.com/GastiC/WebMascotas" target="_blank">
-                            <span class="button_projects">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </span>
-                        </a>
-                        <a href="http://gastic.pythonanywhere.com/home/?fbclid=IwAR0IEkspEEXIVQqPdNtjIhdEt0reNJ5yTD8zkeUbA_4jN2fXzCk_j_1CLcs"
-                            target="_blank">
-                            <span class="button_projects">
-                                <i class="fas fa-globe"></i>
-                                Website
-                            </span>
-                        </a>
-                        <hr class="hr_light" />
-                        <p class="subtitle_format">
-                            Portfolio
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-clock icons_color icons_size"></i>About 1 month
-                            <i class="fas fa-info-circle icons_size ml-4"></i>Digital porfolio - Own project
-
-                        </p>
-                        <p>
-                            HTML - CSS - Bootstrap <br>
-                            JavaScript <br>
-                        </p>
-                        <a href="https://github.com/GastiC/Portfolio" target="_blank">
-                            <span class="button_projects">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </span>
-                        </a>
-
-                        <hr class="hr_light" />
-
-                        <p class="subtitle_format">
-                            Sublinova
-                        </p>
-                        <p class="texts_block language_change">
-                            <i class="far fa-clock icons_color icons_size"></i>About 3 weeks
-                            <i class="fas fa-info-circle icons_size ml-4"></i>Website for entrepreneurship - Own project
-
-                        </p>
-                        <p>
-                            HTML - CSS<br>
-                        </p>
-                        <a href="https://github.com/GastiC/Proyecto-final-HTML-CSS" target="_blank">
-                            <span class="button_projects">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </span>
-                        </a>
-                        <a href="https://proyectofinalcodoacodo.netlify.app/index.html" target="_blank">
-                            <span class="button_projects">
-                                <i class="fas fa-globe"></i>
-                                Website
-                            </span>
-                        </a>
-                    </div>
+                        <p class="language_change">Spanish</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 100%"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <p class="language_change">English</p>
+                        <div class="progress bar_radius bar_position">
+                            <div class="progress-bar bar_radius bar_colour" role="progressbar" style="width: 80%"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
                 </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-8 d-inline-block mb-2 margin"
+                style="color: aliceblue;padding-right: 0!important;" id="right_container_1">
+                <div class="p-4 blocks_format_light bz" id="second_block">
+                    <h3 class="language_change">
+                        <i class="fas fa-suitcase icons_color"></i>
+                        Work Experience
+                    </h3>
+                    <p class="subtitle_format change_language_link">
+                        <b>Business Operations Associate</b> - <a href="https://www.accenture.com/us-en" target="_blank"
+                            class="links">Accenture Service Center SRL </a>
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>November 2019 -
+                        <span class="button_projects">
+                            Present
+                        </span>
+                    </p>
+                    <p class="language_change">
+                        Development and implementation of automation using Python and its libraries.<br>
+                        Execution of corporate operations within the area of international taxes. <br>
+                        Elaboration of reports on a monthly, quarterly and annual basis.<br>
+                        Contact with external agents both inside and outside the country.
+                    </p>
+                    <hr class="hr_light" />
+                    <p class="subtitle_format change_language_link">
+                        <b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank"
+                            class="links">TeleCentro </a>
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>July 2017 - October 2019
+                    </p>
+                    <p class="language_change">
+                        Contact to professionals and businesses by email or by telephone, to provide them the
+                        services
+                        of the company. <br>
+                        Sale of products of the company Papelera Tucumán. <br>
+                        Preparation of reports and proposal of ideas to generate an increase in sales. <br>
+                    </p>
+                    <hr class="hr_light" />
+                    <p class="subtitle_format change_language_link">
+                        <b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"
+                            class="links">TeleCentro </a>
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>April 2015 - June 2017
+                    </p>
+                    <p class="language_change">
+                        Contact of potential residential customers by email or telephone, to offer them the service
+                        provided by the company.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2 margin"
+                style="color: aliceblue;padding-right: 0!important;" id="right_container_2">
+                <div class="p-4 blocks_format_light bz" id="third_block">
+                    <h3 class="language_change">
+                        <i class="fas fa-user-graduate icons_color"></i>
+                        Education
+                    </h3>
+                    <p class="subtitle_format">
+                        Full Stack - Python</a>
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>August 2020 - December 2020
+                    </p>
+                    <p class="texts_block">
+                        <i class="fa fa-graduation-cap icons_color icons_size"></i><a
+                            href="https://www.buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank"
+                            class="links texts_block">Codo a codo
+                            4.0
+                    </p>
+                    <hr class="hr_light" />
+
+                    <p class="subtitle_format language_change">
+                        Python for Data Analysis
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>March 2020 - April 2020
+                    </p>
+                    <p class="texts_block">
+                        <i class="fa fa-graduation-cap icons_color icons_size"></i>
+                        <a href="https://www.educacionit.com/" target="_blank" class="links texts_block">EducacionIT</a>
+                    </p>
+                    <p>
+                    </p>
+                    <hr class="hr_light" />
+
+                    <p class="subtitle_format language_change">
+                        Introduction to Databases and SQL
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>February 2020 - March 2020
+                    </p>
+                    <p class="texts_block">
+                        <i class="fa fa-graduation-cap icons_color icons_size"></i>
+                        <a href="https://www.educacionit.com/" target="_blank" class="links texts_block">EducacionIT</a>
+                    </p>
+                    <p>
+                    </p>
+                    <hr class="hr_light" />
+
+                    <p class="subtitle_format language_change">
+                        Python for Non-Developers
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>January 2020 - February 2020
+                    </p>
+                    <p class="texts_block">
+                        <i class="fa fa-graduation-cap icons_color icons_size"></i>
+                        <a href="https://www.educacionit.com/" target="_blank" class="links texts_block">EducacionIT</a>
+                    </p>
+                    <p>
+                    </p>
+                    <hr class="hr_light" />
+
+                    <p class="subtitle_format language_change">
+                        Bachelor's degree in International Trade
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-calendar-alt icons_color icons_size"></i>April 2014 - July 2019
+                    </p>
+                    <p class="texts_block">
+                        <i class="fa fa-graduation-cap icons_color icons_size"></i>
+                        <a href="https://www.unlam.edu.ar/" target="_blank" class="links texts_block">
+                            Universidad Nacional de la Matanza
+                        </a>
+                    </p>
+                    <p class="texts_block">
+                        <i class="fas fa-award icons_color icons_size"></i>7.55
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 d-inline-block mb-2 mt-2 margin "
+                style="color: aliceblue;padding-right: 0!important; float: right;" id="right_container_3">
+                <div class="p-4 blocks_format_light bz" id="fourth_block">
+                    <h3 class="language_change">
+                        <i class="fas fa-laptop-code icons_color"></i>
+                        Projects
+                    </h3>
+                    <p class="subtitle_format">
+                        Encontrá a tu mascota
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-clock icons_color icons_size"></i>In progress
+                        <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project
+
+                    </p>
+                    <p>
+                        HTML - CSS - Bootstrap <br>
+                        JavaScript <br>
+                        Python - Django <br>
+                        SQL - PostgreSQL - SQLite <br>
+                    </p>
+                    <a href="https://github.com/GastiC/WebMascotas" target="_blank">
+                        <span class="button_projects">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+                    </a>
+                    <a href="http://gastic.pythonanywhere.com/home/?fbclid=IwAR0IEkspEEXIVQqPdNtjIhdEt0reNJ5yTD8zkeUbA_4jN2fXzCk_j_1CLcs"
+                        target="_blank">
+                        <span class="button_projects">
+                            <i class="fas fa-globe"></i>
+                            Website
+                        </span>
+                    </a>
+                    <hr class="hr_light" />
+                    <p class="subtitle_format">
+                        Portfolio
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-clock icons_color icons_size"></i>About 1 month
+                        <i class="fas fa-info-circle icons_size ml-4"></i>Digital porfolio - Own project
+
+                    </p>
+                    <p>
+                        HTML - CSS - Bootstrap <br>
+                        JavaScript <br>
+                    </p>
+                    <a href="https://github.com/GastiC/Portfolio" target="_blank">
+                        <span class="button_projects">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+                    </a>
+
+                    <hr class="hr_light" />
+
+                    <p class="subtitle_format">
+                        Sublinova
+                    </p>
+                    <p class="texts_block language_change">
+                        <i class="far fa-clock icons_color icons_size"></i>About 3 weeks
+                        <i class="fas fa-info-circle icons_size ml-4"></i>Website for entrepreneurship - Own project
+
+                    </p>
+                    <p>
+                        HTML - CSS<br>
+                    </p>
+                    <a href="https://github.com/GastiC/Proyecto-final-HTML-CSS" target="_blank">
+                        <span class="button_projects">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+                    </a>
+                    <a href="https://proyectofinalcodoacodo.netlify.app/index.html" target="_blank">
+                        <span class="button_projects">
+                            <i class="fas fa-globe"></i>
+                            Website
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>

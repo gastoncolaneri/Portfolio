@@ -1,13 +1,3 @@
-window.addEventListener('load', spinner);
-
-function spinner(e){ 
-    e.preventDefault() 
-    setTimeout(function(){
-        document.getElementById('spinner').style.visibility ="visible";
-        document.getElementById('spinner').style.opacity = "1";
-    }, 3000);
-}
-
 // Functions
 
 function change_dark(){
@@ -33,7 +23,6 @@ function change_dark(){
     span_format = document.getElementsByClassName('p');
     for (i=0; i<span_format.length; i++){
         span_format[i].classList.add('text_colour_skills');
-        console.log(span_format[i]);
     };
     h3_format = document.getElementsByTagName('h3')
     for (i=0; i<h3_format.length; i++){
@@ -78,7 +67,6 @@ function change_light(){
     span_format = document.getElementsByClassName('p')
     for (i=0; i<span_format.length; i++){
         span_format[i].classList.remove('text_colour_skills'); 
-        console.log(span_format[i]);  
     };
     h3_format = document.getElementsByTagName('h3')
     for (i=0; i<h3_format.length; i++){
@@ -99,9 +87,20 @@ function change_light(){
     onresize_body ();
 };
 
+function spanish_cv(){
+    document.getElementsByClassName('cv')[0].href = 'C:/Users/Gastón Colaneri/Desktop/Gasti/CVs/Castellano/CV Colaneri, Christian Gaston.pdf';
+    document.getElementsByClassName('cv')[0].dowload = 'CV Colaneri, Christian Gaston.pdf';
+};
+
+function english_cv(){
+    document.getElementsByClassName('cv')[0].href = 'C:/Users/Gastón Colaneri/Desktop/Gasti/CVs/Inglés/Con foto/Resume Colaneri, Christian Gaston.pdf';
+    document.getElementsByClassName('cv')[0].dowload = 'Resume Colaneri, Christian Gaston.pdf';
+};
+
 function change_spanish(){
     changes = document.getElementsByClassName("language_change")
     texts = ['<i class="fas fa-briefcase icons_color"></i> Aspirante a Desarrollador Web Full Stack',
+    '<i class="fas fa-download icons_color icons_size"></i>Descargar CV',
     '<i class="fa fa-cogs icons_color"></i>Habilidades técnicas',
     '<i class="fas fa-user-tie icons_color"></i>Habilidades personales',
     'Comunicación escrita y verbal',
@@ -140,12 +139,14 @@ function change_spanish(){
     for (i=0; i<changes.length; i++){ 
         changes[i].innerHTML = texts[i];
     };
+    spanish_cv()
     onresize_body ();
 }; 
 
 function change_english(){
     changes = document.getElementsByClassName("language_change")
     texts_english = ['<i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer',
+    '<i class="fas fa-download icons_color icons_size"></i>Download Resume',
     '<i class="fa fa-cogs icons_color"></i>Technical Skills',
     '<i class="fas fa-user-tie icons_color"></i>Personal Skills',
     'Written and verbal communication',
@@ -184,6 +185,7 @@ function change_english(){
     for (i=0; i<changes.length; i++){ 
         changes[i].innerHTML = texts_english[i];
     };
+    english_cv()
     onresize_body ();
 
 };
@@ -213,7 +215,7 @@ function change_spanish_link_light(){
         changes_link[i].innerHTML = link_spanish[i];
     }      
     change_light();
-    change_spanish();  
+    change_spanish(); 
 };    
 
 function change_english_link_dark(){
@@ -226,7 +228,7 @@ function change_english_link_dark(){
         changes_link[i].innerHTML = link_english[i];
     };
     change_dark();
-    change_english();  
+    change_english();
 };
 
 function change_english_link_light(){
@@ -239,7 +241,8 @@ function change_english_link_light(){
         changes_link[i].innerHTML = link_english[i];
     };
     change_light();
-    change_english();        
+    change_english();
+        
 }; 
 
 function change_colour_localstorage(){
@@ -263,7 +266,6 @@ function change_colour_localstorage(){
         document.getElementById("myonoffswitch").checked = false;  
         document.getElementById("myonoffswitch2").checked = true;
     };
-    console.log('dos')
 };
 
 function change_colour_localstorage2(){
@@ -281,7 +283,6 @@ function change_colour_localstorage2(){
         change_english_link_dark();
 
     };
-    console.log('dos')
 };
 
 function change_colour(){
@@ -309,7 +310,6 @@ function change_colour(){
             localStorage.setItem('light', 'false');
             localStorage.setItem('english', 'true');
         }
-        console.log('uno')
     };       
 
 function onload_body () {
@@ -327,7 +327,6 @@ function onload_body () {
 
     if (localStorage.getItem('light') !== "" & localStorage.getItem('english') !== "") {
         change_colour_localstorage();
-        console.log('gato');
     };  
 };
 
