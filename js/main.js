@@ -30,10 +30,9 @@ function change_dark(){
     for (i=0; i<html_font.length; i++){
         html_font[i].classList.add('text_colour');  
     };
-    span_format = document.getElementsByClassName('p')
+    span_format = document.getElementsByClassName('p');
     for (i=0; i<span_format.length; i++){
-        span_format[i].classList.add('text_colour'); 
-          
+        span_format[i].classList.add('text_colour_skills');
         console.log(span_format[i]);
     };
     h3_format = document.getElementsByTagName('h3')
@@ -78,7 +77,7 @@ function change_light(){
     };
     span_format = document.getElementsByClassName('p')
     for (i=0; i<span_format.length; i++){
-        span_format[i].classList.remove('text_colour'); 
+        span_format[i].classList.remove('text_colour_skills'); 
         console.log(span_format[i]);  
     };
     h3_format = document.getElementsByTagName('h3')
@@ -100,26 +99,19 @@ function change_light(){
     onresize_body ();
 };
 
-
 function change_spanish(){
-    /*document.getElementById("job_title").innerHTML = " <i class='fas fa-briefcase icons_color'></i> Aspirante a Desarrollador Web Full Stack";
-    document.getElementById("first_block_title").innerHTML = '<b><i class="fa fa-cogs icons_color"></i>Habilidades</b>'
-    document.getElementById("second_block_title").innerHTML = '<b><i class="fas fa-language icons_color"></i><span key="Idioma">Idiomas</span></b>'
-    document.getElementById("first_language").innerHTML = 'Español'
-    document.getElementById("second_language").innerHTML = 'Inglés'*/
-
     changes = document.getElementsByClassName("language_change")
     texts = ['<i class="fas fa-briefcase icons_color"></i> Aspirante a Desarrollador Web Full Stack',
     '<i class="fa fa-cogs icons_color"></i>Habilidades técnicas',
     '<i class="fas fa-user-tie icons_color"></i>Habilidades personales',
-    '<span class="p">Comunicación escrita y verbal </span>',
-    '<span class="p">Autodidacta</span>',
-    '<span class="p">Resolución de conflictos</span>',
-    '<span class="p">Trabajo en equipo</span>',
-    '<span class="p">Administración del tiempo</span>',
-    '<span class="p"> Adaptabilidad </span>',
-    '<span class="p"> Dedicación </span>',
-    '<span class="p"> Organización </span>',
+    'Comunicación escrita y verbal',
+    'Autodidacta',
+    'Resolución de conflictos',
+    'Trabajo en equipo',
+    'Administración del tiempo',
+    ' Adaptabilidad ',
+    ' Dedicación ',
+    ' Organización ',
     '<i class="fas fa-language icons_color"></i><span key="Idioma">Idiomas</span>',
     'Español',
     'Inglés',
@@ -141,7 +133,7 @@ function change_spanish(){
     "Licenciatura en Comercio Internacional</a>",
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2014 - Julio 2019',
     '<i class="fas fa-laptop-code icons_color"></i>Proyectos',
-    '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 6 meses - En curso <i class="fas fa-info-circle icons_size ml-4"></i>Buscador de mascotas perdidas - Proyecto Personal',
+    '<i class="far fa-clock icons_color icons_size"></i>En proceso <i class="fas fa-info-circle icons_size ml-4"></i>Buscador de mascotas perdidas - Proyecto Personal',
     '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 1 mes <i class="fas fa-info-circle icons_size ml-4"></i>Portfolio digital - Proyecto Personal',
     '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 3 semanas <i class="fas fa-info-circle icons_size ml-4"></i>Sitio web para emprendimiento personal - Proyecto Personal',
 ]    
@@ -149,78 +141,21 @@ function change_spanish(){
         changes[i].innerHTML = texts[i];
     };
     onresize_body ();
-};
-
-
-function change_spanish_link_dark(){
-    changes_link = document.getElementsByClassName("change_language_link")
-    link_spanish = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(214, 212, 212)">Accenture Service Center SRL </a>',
-    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
-    '<b>Administrador de ventas</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
-    ]
-
-    for (i=0; i<changes_link.length; i++){ 
-        changes_link[i].innerHTML = link_spanish[i];
-    };
-    
-};
-
-function change_spanish_link_light(){
-    changes_link = document.getElementsByClassName("change_language_link")
-    link_spanish = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(81, 79, 79)">Accenture Service Center SRL </a>',
-    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    '<b>Administrador de ventas</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    ]
-
-    for (i=0; i<changes_link.length; i++){ 
-        changes_link[i].innerHTML = link_spanish[i];
-    }      
-};    
-
-function change_english_link_dark(){
-    changes_link = document.getElementsByClassName("change_language_link")
-    link_english = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(214, 212, 212)">Accenture Service Center SRL </a>',
-    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
-    '<b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
-    ]
-
-    for (i=0; i<changes_link.length; i++){ 
-        changes_link[i].innerHTML = link_english[i];
-
-    }
-};
-
-function change_english_link_light(){
-    changes_link = document.getElementsByClassName("change_language_link")
-    link_english = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(81, 79, 79)">Accenture Service Center SRL </a>',
-    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    '<b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    ]
-    console.log(changes_link)
-    for (i=0; i<changes_link.length; i++){ 
-        changes_link[i].innerHTML = link_english[i];
-    }      
-};     
+}; 
 
 function change_english(){
-    /*document.getElementById("job_title").innerHTML = " <i class='fas fa-briefcase icons_color'></i> Applicant to Full Stack Web Developer";
-    document.getElementById("first_block_title").innerHTML = '<b><i class="fa fa-cogs icons_color"></i>Skills</b>'
-    document.getElementById("second_block_title").innerHTML = '<b><i class="fas fa-language icons_color"></i><span key="Idioma">Languages</span></b>'
-    document.getElementById("first_language").innerHTML = 'Spanish'
-    document.getElementById("second_language").innerHTML = 'English '*/
-
     changes = document.getElementsByClassName("language_change")
     texts_english = ['<i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer',
     '<i class="fa fa-cogs icons_color"></i>Technical Skills',
     '<i class="fas fa-user-tie icons_color"></i>Personal Skills',
-    '<span class="p">Written and verbal communication </span>',
-    '<span class="p">Self-learner</span>',
-    '<span class="p">Problem solving</span>',
-    '<span class="p">Teamwork</span>',
-    '<span class="p">Time-management</span>',
-    '<span class="p"> Adaptability </span>',
-    '<span class="p"> Dedication </span>',
-    '<span class="p"> Organization </span>',
+    'Written and verbal communication',
+    'Self-learner',
+    'Problem solving',
+    'Teamwork',
+    'Time-management',
+    ' Adaptability ',
+    ' Dedication ',
+    ' Organization ',
     '<i class="fas fa-language icons_color"></i><span key="Idioma">Languages</span>',
     'Spanish',
     'English',
@@ -242,7 +177,7 @@ function change_english(){
     "Bachelor's degree in International Trade</a>",
     '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2014 - July 2019',
     '<i class="fas fa-laptop-code icons_color"></i>Projects',
-    '<i class="far fa-clock icons_color icons_size"></i>About 6 months <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project',
+    '<i class="far fa-clock icons_color icons_size"></i>In progress <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project',
     '<i class="far fa-clock icons_color icons_size"></i>About 1 month <i class="fas fa-info-circle icons_size ml-4"></i>Digital porfolio - Own project',
     '<i class="far fa-clock icons_color icons_size"></i>About 3 weeks <i class="fas fa-info-circle icons_size ml-4"></i>Website for own entrepreneurship - Own project',
 ]
@@ -253,83 +188,129 @@ function change_english(){
 
 };
 
+function change_spanish_link_dark(){
+    changes_link = document.getElementsByClassName("change_language_link")
+    link_spanish = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(214, 212, 212)">Accenture Service Center SRL </a>',
+    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
+    '<b>Administrador de ventas</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
+    ]
+
+    for (i=0; i<changes_link.length; i++){ 
+        changes_link[i].innerHTML = link_spanish[i];
+    };
+    change_dark();
+    change_spanish();    
+};
+
+function change_spanish_link_light(){
+    changes_link = document.getElementsByClassName("change_language_link")
+    link_spanish = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(81, 79, 79)">Accenture Service Center SRL </a>',
+    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
+    '<b>Administrador de ventas</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
+    ]
+
+    for (i=0; i<changes_link.length; i++){ 
+        changes_link[i].innerHTML = link_spanish[i];
+    }      
+    change_light();
+    change_spanish();  
+};    
+
+function change_english_link_dark(){
+    changes_link = document.getElementsByClassName("change_language_link")
+    link_english = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(214, 212, 212)">Accenture Service Center SRL </a>',
+    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
+    '<b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
+    ]
+    for (i=0; i<changes_link.length; i++){ 
+        changes_link[i].innerHTML = link_english[i];
+    };
+    change_dark();
+    change_english();  
+};
+
+function change_english_link_light(){
+    changes_link = document.getElementsByClassName("change_language_link")
+    link_english = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(81, 79, 79)">Accenture Service Center SRL </a>',
+    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
+    '<b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
+    ]
+    for (i=0; i<changes_link.length; i++){ 
+        changes_link[i].innerHTML = link_english[i];
+    };
+    change_light();
+    change_english();        
+}; 
 
 function change_colour_localstorage(){
-
-
     if (localStorage.getItem('light') === 'true' && localStorage.getItem('english').checked === 'true'){  
-        change_light();
-        change_english();
         change_english_link_light();
-        document.getElementById("myonoffswitch").checked === true  
-        document.getElementById("myonoffswitch2").checked === true
-
+        document.getElementById("myonoffswitch").checked = true;  
+        document.getElementById("myonoffswitch2").checked = true;
 
     } else if(localStorage.getItem('light') === 'true' && localStorage.getItem('english') === 'false') {
-        change_light();
-        change_spanish();
         change_spanish_link_light();
-        document.getElementById("myonoffswitch").checked === true  
-        document.getElementById("myonoffswitch2").checked === false
-
-
+        document.getElementById("myonoffswitch").checked = true;  
+        document.getElementById("myonoffswitch2").checked = false;
 
     } else if(localStorage.getItem('light') === 'false' && localStorage.getItem('english') === 'false') {
-        change_dark();
-        change_spanish();
         change_spanish_link_dark();
-        document.getElementById("myonoffswitch").checked === false  
-        document.getElementById("myonoffswitch2").checked === false
-
+        document.getElementById("myonoffswitch").checked = false;  
+        document.getElementById("myonoffswitch2").checked = false;
 
     } else if (localStorage.getItem('light') === 'false' && localStorage.getItem('english') === 'true') {
-        change_dark();
-        change_english();
         change_english_link_dark();
-        document.getElementById("myonoffswitch").checked === false  
-        document.getElementById("myonoffswitch2").checked === true
+        document.getElementById("myonoffswitch").checked = false;  
+        document.getElementById("myonoffswitch2").checked = true;
+    };
+    console.log('dos')
+};
 
+function change_colour_localstorage2(){
+
+    if (localStorage.getItem('light') === 'true' && localStorage.getItem('english').checked === 'true'){  
+        change_english_link_light();
+
+    } else if(localStorage.getItem('light') === 'true' && localStorage.getItem('english') === 'false') {
+        change_spanish_link_light();
+
+    } else if(localStorage.getItem('light') === 'false' && localStorage.getItem('english') === 'false') {
+        change_spanish_link_dark();
+
+    } else if (localStorage.getItem('light') === 'false' && localStorage.getItem('english') === 'true') {
+        change_english_link_dark();
 
     };
     console.log('dos')
-
 };
+
 function change_colour(){
         if (document.getElementById("myonoffswitch").checked === true && document.getElementById("myonoffswitch2").checked === true){  
-            change_light();
-            change_english();
-            change_english_link_light();
             localStorage.clear();
-            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
-            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+            change_english_link_light();
+            localStorage.setItem('light', 'true');
+            localStorage.setItem('english', 'true');
     
         } else if(document.getElementById("myonoffswitch").checked === true && document.getElementById("myonoffswitch2").checked === false) {
-            change_light();
-            change_spanish();
-            change_spanish_link_light();
             localStorage.clear();
-            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
-            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+            change_spanish_link_light();
+            localStorage.setItem('light', 'true');
+            localStorage.setItem('english', 'false');
     
         } else if(document.getElementById("myonoffswitch").checked === false && document.getElementById("myonoffswitch2").checked === false) {
-            change_dark();
-            change_spanish();
-            change_spanish_link_dark();
             localStorage.clear();
-            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
-            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+            change_spanish_link_dark();
+            localStorage.setItem('light', 'false');
+            localStorage.setItem('english', 'false');
     
         } else if (document.getElementById("myonoffswitch").checked === false && document.getElementById("myonoffswitch2").checked === true) {
-            change_dark();
-            change_english();
-            change_english_link_dark();
             localStorage.clear();
-            localStorage.setItem('light', document.getElementById("myonoffswitch").checked);
-            localStorage.setItem('english', document.getElementById("myonoffswitch2").checked);
+            change_english_link_dark();
+            localStorage.setItem('light', 'false');
+            localStorage.setItem('english', 'true');
         }
         console.log('uno')
     };       
-
 
 function onload_body () {
     setTimeout(function(){ 
@@ -339,7 +320,6 @@ function onload_body () {
         var rightContainer3 = document.getElementById("right_container_3");
     
         if (window.innerWidth > 767) {
-
             total = rightContainer1.clientHeight + rightContainer2.clientHeight + rightContainer3.clientHeight + 32
             firstBlock.style.minHeight = total + "px";
         };
@@ -347,9 +327,8 @@ function onload_body () {
 
     if (localStorage.getItem('light') !== "" & localStorage.getItem('english') !== "") {
         change_colour_localstorage();
-        console.log('gato')
-    };   
-
+        console.log('gato');
+    };  
 };
 
 function onresize_body () {
@@ -361,5 +340,5 @@ function onresize_body () {
         if (window.innerWidth > 767) {
             total = rightContainer1.clientHeight + rightContainer2.clientHeight + rightContainer3.clientHeight + 32
             firstBlock.style.minHeight = total + "px";
-        } else { firstBlock.style.minHeight = 0 }
+        } else { firstBlock.style.minHeight = 0 };
 };

@@ -16,6 +16,13 @@ h6 {
 .text_colour {
     color:#d6d4d4;
 }
+
+.text_colour_skills {
+    color:#d6d4d4 !important;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif, Arial, Helvetica;
+    margin-bottom: 20px;
+}
 .bz{
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
