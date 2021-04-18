@@ -88,12 +88,12 @@ function change_light(){
 };
 
 function spanish_cv(){
-    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1Gy0Z-oq7y0TaPlKtIlrFgkGyIGmRRh2J/view?usp=sharing';
+    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1-UjVY3LbOhoUulCnjzBoC5ywRCrtln1B/view?usp=sharing';
     document.getElementsByClassName('cv')[0].dowload = 'CV Colaneri, Christian Gaston.pdf';
 };
 
 function english_cv(){
-    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/11va6ffjZe8leYl_bF-HfxLUClGCS_Yy3/view?usp=sharing';
+    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1XvfL9Jb02bXSTJPh0rqUYaiUo2D9WVGf/view?usp=sharing';
     document.getElementsByClassName('cv')[0].dowload = 'Resume Colaneri, Christian Gaston.pdf';
 };
 
@@ -115,13 +115,14 @@ function change_spanish(){
     'Español',
     'Inglés',
     '<i class="fas fa-suitcase icons_color"></i>Experiencia laboral',
-    '<i class="far fa-calendar-alt cons_color icons_size"></i>Noviembre 2019 - <span class="button_projects">Actualidad </span>',
+    '<i class="far fa-calendar-alt cons_color icons_size"></i>Noviembre 2019 - <span class="button_present">Actualidad </span>',
     'Desarrollo e implementación de automatizaciones utilizando Python y sus librerías.<br> Ejecución de operaciones corporativas dentro del área de impuestos internacionales. <br> Elaboración de reportes y análisis de manera mensual, trimestral y anual.<br>Contacto con agentes externos tanto dentro como fuera de la compañía.',
-    '<i class="far fa-calendar-alt icons_color icons_size"></i>Julio 2017 - Octubre 2019',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2015 - Octubre 2019',
     'Contacto a profesionales y empresas vía mail o telefónicamente, para ofrecerles el servicio que brinda la compañía. <br> Gestión de la venta de productos de la empresa Papelera Tucumán. <br> Confección de reportes, análisis y propuesta de ideas para generar un incremento en las ventas del sector. <br>',
-    '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2015 - Junio 2017',
-    'Contacto de potenciales clientes residenciales por email o telefónicamente, para ofrecerles el servicio que brinda la compañía.',
     '<i class="fas fa-user-graduate icons_color"></i> Educación',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2021 - Actualidad',
+    'Desarrollo web Full Stack con Java',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>Marzo 2021 - Actualidad',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Agosto 2020 - Diciembre 2020',
     'Python para análisis de datos',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Marzo 2020 - Abril 2020',
@@ -161,13 +162,14 @@ function change_english(){
     'Spanish',
     'English',
     '<i class="fas fa-suitcase icons_color"></i>Work Experience',
-    '<i class="far fa-calendar-alt cons_color icons_size"></i>November 2019 - <span class="button_projects">Present </span>',
+    '<i class="far fa-calendar-alt cons_color icons_size"></i>November 2019 - <span class="button_present">Present </span>',
     'Development and implementation of automation using Python and its libraries.<br> Execution of corporate operations within the area of international taxes. <br> Elaboration of reports on a monthly, quarterly and annual basis.<br> Contact with external agents both inside and outside the country.',
-    '<i class="far fa-calendar-alt icons_color icons_size"></i>July 2017 - October 2019',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2015 - October 2019',
     'Contact to professionals and businesses by email or by telephone, to provide them the services of the company. <br> Sale of products of the company Papelera Tucumán. <br> Preparation of reports and proposal of ideas to generate an increase in sales. <br>',
-    '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2015 - June 2017',
-    'Contact of potential residential customers by email or telephone, to offer them the service provided by the company.',
     '<i class="fas fa-user-graduate icons_color"></i> Education',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2021 - Present',
+    'Web development Full Stack with Java',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>March 2021 - Present',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>August 2020 - December 2020',
     'Python for Data Analysis',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>March 2020 - April 2020',

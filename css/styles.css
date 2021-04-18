@@ -87,8 +87,9 @@ p,a {
 }
 .links:hover{
     text-decoration: none;
-    color:#d6d4d4;
-    margin-left: 0px !important;
+    color:#757575;
+    margin-left: 0px !importan  t;
+    font-weight: 600;
 }
 
 .links_dark {
@@ -101,6 +102,7 @@ p,a {
     text-decoration: none;
     color:#d6d4d4;
     margin-left: 0px !important;
+    
 }
 
 .bar_radius {
@@ -156,6 +158,18 @@ p,a {
     margin-bottom: 5px;
 }
 
+.links_button{
+    text-decoration: none !important;
+}
+
+.button_present{
+    background-color: #08A6A1;
+    border-radius: 50px; 
+    padding: 3px 8px 3px 8px;
+    color: aliceblue; 
+    margin-right: 15px;
+    font-size: small;
+}
 .button_projects {
     background-color: #08A6A1;
     border-radius: 50px; 
@@ -163,6 +177,12 @@ p,a {
     color: aliceblue; 
     margin-right: 15px;
     font-size: small;
+}
+
+.button_projects:hover {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: medium;
 }
 
 @media (max-width: 767px) {
