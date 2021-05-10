@@ -187,6 +187,7 @@ function change_english(){
     for (i=0; i<changes.length; i++){ 
         changes[i].innerHTML = texts_english[i];
     };
+
     english_cv()
     onresize_body ();
 
@@ -203,7 +204,8 @@ function change_spanish_link_dark(){
         changes_link[i].innerHTML = link_spanish[i];
     };
     change_dark();
-    change_spanish();    
+    change_spanish();   
+    document.querySelector('.onoffswitch-inner').setAttribute('data-content', "Oscuro") 
 };
 
 function change_spanish_link_light(){
@@ -218,6 +220,8 @@ function change_spanish_link_light(){
     }      
     change_light();
     change_spanish(); 
+    document.querySelector('.onoffswitch-inner').setAttribute('data-content', "Claro")
+
 };    
 
 function change_english_link_dark(){
@@ -231,6 +235,8 @@ function change_english_link_dark(){
     };
     change_dark();
     change_english();
+    document.querySelector('.onoffswitch-inner').setAttribute('data-content', "Dark")
+
 };
 
 function change_english_link_light(){
@@ -244,6 +250,8 @@ function change_english_link_light(){
     };
     change_light();
     change_english();
+    document.querySelector('.onoffswitch-inner').setAttribute('data-content', "Light")
+
         
 }; 
 

@@ -23,12 +23,12 @@
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "Claro";
+    content: attr(data-content);
     padding-left: 10px;
     background-color: #08A6A1; color: #FFFFFF;
 }
 .onoffswitch-inner:after {
-    content: "Oscuro";
+    content: attr(data-content);
     padding-right: 10px;
     background-color: #08A6A1; color: #FFFFFF;
     text-align: right;
