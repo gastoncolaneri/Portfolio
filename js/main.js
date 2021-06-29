@@ -82,24 +82,24 @@ function change_light(){
     };
     link_format = document.getElementsByTagName('a')
     for (i=0; i<7; i++){
-        link_format[i].style.color="#514f4f";   
+        link_format[i].style.color="#757575";   
     };
     onresize_body ();
 };
 
 function spanish_cv(){
-    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1-UjVY3LbOhoUulCnjzBoC5ywRCrtln1B/view?usp=sharing';
+    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1ho5yqyCUnEpuErGPKJEA2nmfpZFCiT30/view?usp=sharing';
     document.getElementsByClassName('cv')[0].dowload = 'CV Colaneri, Christian Gaston.pdf';
 };
 
 function english_cv(){
-    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1XvfL9Jb02bXSTJPh0rqUYaiUo2D9WVGf/view?usp=sharing';
+    document.getElementsByClassName('cv')[0].href = 'https://drive.google.com/file/d/1d7e4g8cJzIHVw-B0bEyF-HqO0AbubLv_/view?usp=sharing';
     document.getElementsByClassName('cv')[0].dowload = 'Resume Colaneri, Christian Gaston.pdf';
 };
 
 function change_spanish(){
     changes = document.getElementsByClassName("language_change")
-    texts = ['<i class="fas fa-briefcase icons_color"></i> Aspirante a Desarrollador Web Full Stack',
+    texts = ['<i class="fas fa-briefcase icons_color"></i> Desarrollador de Software',
     '<i class="fas fa-download icons_color icons_size"></i>Descargar CV',
     '<i class="fa fa-cogs icons_color"></i>Habilidades técnicas',
     '<i class="fas fa-user-tie icons_color"></i>Habilidades personales',
@@ -115,7 +115,9 @@ function change_spanish(){
     'Español',
     'Inglés',
     '<i class="fas fa-suitcase icons_color"></i>Experiencia laboral',
-    '<i class="far fa-calendar-alt cons_color icons_size"></i>Noviembre 2019 - <span class="button_present">Actualidad </span>',
+    '<i class="far fa-calendar-alt cons_color icons_size"></i>Junio 2021 - <span class="button_present">Actualidad </span>',
+    'Desarrollo web utilizando ReactJS y desarrollo mobile utilizando React Native. <br> Otras herramientas utilizadas: Gitlab - Visual Studio Code - Android Studio.',
+    '<i class="far fa-calendar-alt cons_color icons_size"></i>Noviembre 2019 - Junio 2021',
     'Desarrollo e implementación de automatizaciones utilizando Python y sus librerías.<br> Ejecución de operaciones corporativas dentro del área de impuestos internacionales. <br> Elaboración de reportes y análisis de manera mensual, trimestral y anual.<br>Contacto con agentes externos tanto dentro como fuera de la compañía.',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2015 - Octubre 2019',
     'Contacto a profesionales y empresas vía mail o telefónicamente, para ofrecerles el servicio que brinda la compañía. <br> Gestión de la venta de productos de la empresa Papelera Tucumán. <br> Confección de reportes, análisis y propuesta de ideas para generar un incremento en las ventas del sector. <br>',
@@ -146,7 +148,7 @@ function change_spanish(){
 
 function change_english(){
     changes = document.getElementsByClassName("language_change")
-    texts_english = ['<i class="fas fa-briefcase icons_color"></i> Applicant to Full Stack Web Developer',
+    texts_english = ['<i class="fas fa-briefcase icons_color"></i> Software Developer',
     '<i class="fas fa-download icons_color icons_size"></i>Download Resume',
     '<i class="fa fa-cogs icons_color"></i>Technical Skills',
     '<i class="fas fa-user-tie icons_color"></i>Personal Skills',
@@ -162,7 +164,9 @@ function change_english(){
     'Spanish',
     'English',
     '<i class="fas fa-suitcase icons_color"></i>Work Experience',
-    '<i class="far fa-calendar-alt cons_color icons_size"></i>November 2019 - <span class="button_present">Present </span>',
+    '<i class="far fa-calendar-alt cons_color icons_size"></i>June 2021 - <span class="button_present">Present </span>',
+    'Web development using ReactJS and mobile development using React Native. <br> Other used tools: Gitlab - Visual Studio Code - Android Studio.',
+    '<i class="far fa-calendar-alt cons_color icons_size"></i>November 2019 - June 2021',
     'Development and implementation of automation using Python and its libraries.<br> Execution of corporate operations within the area of international taxes. <br> Elaboration of reports on a monthly, quarterly and annual basis.<br> Contact with external agents both inside and outside the country.',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2015 - October 2019',
     'Contact to professionals and businesses by email or by telephone, to provide them the services of the company. <br> Sale of products of the company Papelera Tucumán. <br> Preparation of reports and proposal of ideas to generate an increase in sales. <br>',
@@ -195,9 +199,8 @@ function change_english(){
 
 function change_spanish_link_dark(){
     changes_link = document.getElementsByClassName("change_language_link")
-    link_spanish = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(214, 212, 212)">Accenture Service Center SRL </a>',
-    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
-    '<b>Administrador de ventas</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
+    link_spanish = ['<b>Desarrollador de Software</b> - <a href="https://epidata.net/" target="_blank" class="links">Epidata </a>','<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links">Accenture Service Center SRL </a>',
+    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" >TeleCentro </a>',
     ]
 
     for (i=0; i<changes_link.length; i++){ 
@@ -210,9 +213,8 @@ function change_spanish_link_dark(){
 
 function change_spanish_link_light(){
     changes_link = document.getElementsByClassName("change_language_link")
-    link_spanish = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(81, 79, 79)">Accenture Service Center SRL </a>',
-    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    '<b>Administrador de ventas</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
+    link_spanish = ['<b>Desarrollador de Software</b> - <a href="https://epidata.net/" target="_blank" class="links">Epidata </a>','<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links">Accenture Service Center SRL </a>',
+    '<b>Ejecutivo de cuentas</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links">TeleCentro </a>',
     ]
 
     for (i=0; i<changes_link.length; i++){ 
@@ -226,9 +228,8 @@ function change_spanish_link_light(){
 
 function change_english_link_dark(){
     changes_link = document.getElementsByClassName("change_language_link")
-    link_english = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(214, 212, 212)">Accenture Service Center SRL </a>',
-    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
-    '<b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(214, 212, 212)">TeleCentro </a>',
+    link_english = ['<b>Software developer</b> - <a href="https://epidata.net/en/" target="_blank" class="links">Epidata </a>','<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links">Accenture Service Center SRL </a>',
+    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" >TeleCentro </a>'
     ]
     for (i=0; i<changes_link.length; i++){ 
         changes_link[i].innerHTML = link_english[i];
@@ -241,10 +242,8 @@ function change_english_link_dark(){
 
 function change_english_link_light(){
     changes_link = document.getElementsByClassName("change_language_link")
-    link_english = ['<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" style="color: rgb(81, 79, 79)">Accenture Service Center SRL </a>',
-    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    '<b>Sales Manager</b> - <a href="https://www.telecentro.com.ar/" target="_blank"class="links" style="color: rgb(81, 79, 79)">TeleCentro </a>',
-    ]
+    link_english = ['<b>Software developer</b> - <a href="https://epidata.net/en/" target="_blank" class="links">Epidata </a>','<b>Business Operations Associate</b> - <a href="https://www.accenture.com/ar-es" target="_blank"class="links" >Accenture Service Center SRL </a>',
+    '<b>Account Executive</b> - <a href="https://www.telecentro.com.ar/" target="_blank" class="links" >TeleCentro </a>']
     for (i=0; i<changes_link.length; i++){ 
         changes_link[i].innerHTML = link_english[i];
     };
