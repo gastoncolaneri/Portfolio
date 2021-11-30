@@ -99,14 +99,14 @@ function change_light() {
 
 function spanish_cv() {
   document.getElementsByClassName('cv')[0].href =
-    'https://drive.google.com/file/d/14ch6-i3abQrLkqAN6NGkFrJhn4lkgGQw/view?usp=sharing';
+    'https://drive.google.com/file/d/1wy9nDJbQ4xE9KsGdSgdxBxy09F5ZuHpD/view?usp=sharing';
   document.getElementsByClassName('cv')[0].dowload =
     'CV Colaneri, Christian Gaston.pdf';
 }
 
 function english_cv() {
   document.getElementsByClassName('cv')[0].href =
-    'https://drive.google.com/file/d/1qe-5d4CLfpbMf9Ai_HQitAZP5CoboLm1/view?usp=sharing';
+    'https://drive.google.com/file/d/16B9ZnpKGOsxEeAGS7YaNlp6U-gG8KaLW/view?usp=sharing';
   document.getElementsByClassName('cv')[0].dowload =
     'Resume Colaneri, Christian Gaston.pdf';
 }
@@ -137,9 +137,9 @@ function change_spanish() {
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2015 - Octubre 2019',
     'Contacto a profesionales y empresas vía mail o telefónicamente, para ofrecerles el servicio que brinda la compañía. <br> Gestión de la venta de productos de la empresa Papelera Tucumán. <br> Confección de reportes, análisis y propuesta de ideas para generar un incremento en las ventas del sector. <br>',
     '<i class="fas fa-user-graduate icons_color"></i> Educación',
-    'Especialización en Desarrollo Mobile',
-    '<i class="far fa-calendar-alt icons_color icons_size"></i>Septiembre 2021 - Actualidad',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2021 - Actualidad',
+    'Especialización en Desarrollo Mobile',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>Septiembre 2021 - Diciembre 2021',
     'Desarrollo web Full Stack con Java',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Marzo 2021 - Agosto 2021',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Agosto 2020 - Diciembre 2020',
@@ -152,9 +152,11 @@ function change_spanish() {
     'Licenciatura en Comercio Internacional</a>',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>Abril 2014 - Julio 2019',
     '<i class="fas fa-laptop-code icons_color"></i>Proyectos',
-    '<i class="far fa-clock icons_color icons_size"></i>En proceso <i class="fas fa-info-circle icons_size ml-4"></i>Buscador de mascotas perdidas - Proyecto Personal',
-    '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 1 mes <i class="fas fa-info-circle icons_size ml-4"></i>Portfolio digital - Proyecto Personal',
-    '<i class="far fa-clock icons_color icons_size"></i>Aproximadamente 3 semanas <i class="fas fa-info-circle icons_size ml-4"></i>Fitness Style - Proyecto final',
+    '<i class="far fa-clock icons_color icons_size"></i>1 mes <i class="fas fa-info-circle icons_size ml-4"></i>Aplicación para conocer el clima de las ciudades que busques - Proyecto grupal',
+    '<i class="far fa-clock icons_color icons_size"></i>2 meses <i class="fas fa-info-circle icons_size ml-4"></i>Página web para encontrar juegos gratuitos - Proyecto final',
+    '<i class="far fa-clock icons_color icons_size"></i>En proceso <i class="fas fa-info-circle icons_size ml-4"></i>Buscador de mascotas perdidas - Proyecto personal',
+    '<i class="far fa-clock icons_color icons_size"></i> 1 mes <i class="fas fa-info-circle icons_size ml-4"></i>Portfolio digital - Proyecto personal',
+    '<i class="far fa-clock icons_color icons_size"></i> 3 semanas <i class="fas fa-info-circle icons_size ml-4"></i>Fitness Style - Proyecto final',
   ];
   for (i = 0; i < changes.length; i++) {
     changes[i].innerHTML = texts[i];
@@ -189,9 +191,9 @@ function change_english() {
     '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2015 - October 2019',
     'Contact to professionals and businesses by email or by telephone, to provide them the services of the company. <br> Sale of products of the company Papelera Tucumán. <br> Preparation of reports and proposal of ideas to generate an increase in sales. <br>',
     '<i class="fas fa-user-graduate icons_color"></i> Education',
-    'Mobile Development Specialization',
-    '<i class="far fa-calendar-alt icons_color icons_size"></i>September 2021 - Present',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2021 - Present',
+    'Mobile Development Specialization',
+    '<i class="far fa-calendar-alt icons_color icons_size"></i>September 2021 - December 2021',
     'Web development Full Stack with Java',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>March 2021 - August 2021',
     '<i class="far fa-calendar-alt icons_color icons_size"></i>August 2020 - December 2020',
@@ -204,9 +206,11 @@ function change_english() {
     "Bachelor's degree in International Trade</a>",
     '<i class="far fa-calendar-alt icons_color icons_size"></i>April 2014 - July 2019',
     '<i class="fas fa-laptop-code icons_color"></i>Projects',
+    '<i class="far fa-clock icons_color icons_size"></i>1 month <i class="fas fa-info-circle icons_size ml-4"></i>Mobile App to know the weather of the cities you search - Group project',
+    '<i class="far fa-clock icons_color icons_size"></i>2 month <i class="fas fa-info-circle icons_size ml-4"></i>Website to find free games - Final proyect',
     '<i class="far fa-clock icons_color icons_size"></i>In progress <i class="fas fa-info-circle icons_size ml-4"></i>Lost pets browser - Own project',
-    '<i class="far fa-clock icons_color icons_size"></i>About 1 month <i class="fas fa-info-circle icons_size ml-4"></i>Digital porfolio - Own project',
-    '<i class="far fa-clock icons_color icons_size"></i>About 3 weeks <i class="fas fa-info-circle icons_size ml-4"></i>Fitness Style - Final proyect',
+    '<i class="far fa-clock icons_color icons_size"></i>1 month <i class="fas fa-info-circle icons_size ml-4"></i>Digital porfolio - Own project',
+    '<i class="far fa-clock icons_color icons_size"></i>3 weeks <i class="fas fa-info-circle icons_size ml-4"></i>Fitness Style - Final proyect',
   ];
   for (i = 0; i < changes.length; i++) {
     changes[i].innerHTML = texts_english[i];
