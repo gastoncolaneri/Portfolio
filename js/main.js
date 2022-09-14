@@ -116,15 +116,14 @@ function change_light() {
 function spanish_cv() {
   document.getElementsByClassName("cv")[0].href =
     "https://drive.google.com/file/d/1L7PEHuBqKsbqiIHETOYrfCuMgQXjgvP-/view?usp=sharing";
-  document.getElementsByClassName("cv")[0].dowload =
-    "CV Colaneri, Christian Gaston.pdf";
+  document.getElementsByClassName("cv")[0].dowload = "CV Colaneri, Gaston.pdf";
 }
 
 function english_cv() {
   document.getElementsByClassName("cv")[0].href =
     "https://drive.google.com/file/d/1slN4M3R9QAMlnWDQVVytYvJD50jZLo9f/view?usp=sharing";
   document.getElementsByClassName("cv")[0].dowload =
-    "Resume Colaneri, Christian Gaston.pdf";
+    "Resume Colaneri, Gaston.pdf";
 }
 
 function change_spanish() {
